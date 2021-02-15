@@ -46,11 +46,11 @@
             zoomControlOptions: {
                 // Zoom Control Position
                 position: google.maps.ControlPosition[optionsMap.zoom_control_position],
-                style: google.maps.ZoomControlStyle.SMALL,
+                style: google.s.ZoomControlStyle.SMALL,
             },
 
-            //Zoom map
-            zoom: Number(optionsMap.zoom_map),
+            //Zoom 
+            zoom: Number(options.zoom_),
 
             // Scroll Wheel
             scrollwheel: Boolean(optionsMap.is_scroll_wheel),
