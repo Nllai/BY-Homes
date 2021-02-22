@@ -26,6 +26,7 @@
     <link rel="stylesheet" id="coca-core-css" href="./assets/css/style.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="coca-theme-css" href="./assets/css/style2.min.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css?ver=5.5.5" type="text/css" media="all">
+    <link rel="stylesheet" id="language-css" href="./assets/css/language.css" type="text/css" media="all">
 </head>
 
 <body class="home page-template-default page page-id-3946">
@@ -82,10 +83,21 @@
                         <nav>
                             <ul class="main-menu">
                                 <li class="menu-item current-menu-ancestor"><a href="index.html">Home</a></li>
-                                <li class="menu-item"><a href="about.html">About</a></li>      
+                                <li class="menu-item"><a href="about.html">About</a></li>
                                 <li class="menu-item"><a href="projects.html">Projects</a>
                                 <li class="menu-item"><a href="project-concepts.html">Project Concepts</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                                <li class="on" id="english-icon-index" class="menu-item">
+                                    <a onclick="toggleLanguage()" href="#english-icon-index">
+                                        EN
+                                    </a>
+                                </li>
+                                <li id="chinese-icon-index" class="off" class="menu-item">
+                                    <a onclick="toggleLanguage()" href="#chinese-icon-index">
+                                        中文
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -156,20 +168,20 @@
 
 
                 <div class="cs-heading__content">
-                    <p>Our company BY Homes & Renovations is an operated construction company specializing in building and remodeling personal residences and properties in Vancouver and the Lower Mainland.</p>
-                    <p>BY HOMES博洋建筑有限公司的总部位于加拿大卑诗省的列治文市，它凭借其一流的建筑团队和非凡的建筑工艺享誉大温逾10年。公司承接的项目多种多样，从全新房屋的设计建造到旧屋局部改建翻新，总负责人以他们优秀的住宅空间的想象能力，精心拆解细分建造流程和步骤，旨在为每位客户量身订制和打造出实用与美观兼具的精品家庭住宅。                    </p>
+                    <p id="english" class="on">Our company BY Homes & Renovations is an operated construction company specializing in building and remodeling personal residences and properties in Vancouver and the Lower Mainland.</p>
+                    <p id="chinese" class="off">BY HOMES博洋建筑有限公司的总部位于加拿大卑诗省的列治文市，它凭借其一流的建筑团队和非凡的建筑工艺享誉大温逾10年。公司承接的项目多种多样，从全新房屋的设计建造到旧屋局部改建翻新，总负责人以他们优秀的住宅空间的想象能力，精心拆解细分建造流程和步骤，旨在为每位客户量身订制和打造出实用与美观兼具的精品家庭住宅。                    </p>
                     </div>
 
             </section>
         </div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="row row-fluid  row-has-fill row-no-padding  padding-lg-105b padding-sm-70b">
-           
+
 
             <div class="cs-column-container wpb_column column_container col-sm-12 ">
-                
+
             </div>
 
         </div>
-           
+
         </div>
     </div>
 
@@ -214,6 +226,7 @@
 <script src="./assets/js/wp-embed.min.js?ver=5.1.1"></script>
 <script src="./assets/js/js_composer_front.min.js?ver=5.5.5"></script>
 <script src="./assets/js/gm_addons_script.js?ver=5.1.1"></script>
+<script src="./assets/js/language.js"></script>
 
 
 </body>

@@ -26,6 +26,7 @@
     <link rel="stylesheet" id="coca-core-css" href="./assets/css/style.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="coca-theme-css" href="./assets/css/style2.min.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css?ver=5.5.5" type="text/css" media="all">
+    <link rel="stylesheet" id="language-css" href="./assets/css/language.css" type="text/css" media="all">
 </head>
 
 <body class="home page-template-default page page-id-3946">
@@ -82,10 +83,20 @@
                         <nav>
                             <ul class="main-menu">
                                 <li class="menu-item current-menu-ancestor"><a href="index.html">Home</a></li>
-                                <li class="menu-item"><a href="about.html">About</a></li>      
+                                <li class="menu-item"><a href="about.html">About</a></li>
                                 <li class="menu-item"><a href="projects.html">Projects</a>
                                 <li class="menu-item"><a href="project-concepts.html">Project Concepts</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="on" id="english-icon-about" class="menu-item">
+                                    <a onclick="toggleLanguage()" href="#english-icon-about">
+                                        EN
+                                    </a>
+                                </li>
+                                <li id="chinese-icon-about" class="off" class="menu-item">
+                                    <a onclick="toggleLanguage()" href="#chinese-icon-about">
+                                        中文
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -183,11 +194,11 @@
                     <img class="s-img-switch" src="./assets/images/blog-11.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 1 : Initial Consultation</h3>
-                    <h3 class="cs-process__title">步骤1：免费咨询</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 1 : Initial Consultation</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤1：免费咨询</h3>
                     <div class="cs-process__content">
-                        <p> The BY Homes team offers a free initial consultation to discuss your project in terms of specific needs, ideas, project scope, budget and timeline. In addition,we will explain our design and building process and answer any questions or concerns that you may have.</p>
-                        <p>我们的建筑团队为所有客户提供免费初期咨询，主要为了解您对自己房屋的个性化要求和想法，以及工程总量和预算，时限。之后，BY Homes会与您探讨我们的建筑设计流向，以及您的其它顾虑与问题。                        </p>
+                        <p id="english-about" class="on">The BY Homes team offers a free initial consultation to discuss your project in terms of specific needs, ideas, project scope, budget and timeline. In addition,we will explain our design and building process and answer any questions or concerns that you may have.</p>
+                        <p id="chinese-about" class="off">我们的建筑团队为所有客户提供免费初期咨询，主要为了解您对自己房屋的个性化要求和想法，以及工程总量和预算，时限。之后，BY Homes会与您探讨我们的建筑设计流向，以及您的其它顾虑与问题。                        </p>
                     </div>
                 </div>
             </section>
@@ -197,11 +208,11 @@
                     <img class="s-img-switch" src="./assets/images/blog-06.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 2∶ Architecture & Design</h3>
-                    <h3 class="cs-process__title">步骤2：建筑设计</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 2∶ Architecture & Design</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤2：建筑设计</h3>
                     <div class="cs-process__content">
-                        <p>We coordinate with our team of highly skilled and talented architects to design a home that will exceed your expectations. In your design consultation with us, we consider a number of factors, your family life style,neighbourhood,and of course,your budget. </p>
-                        <p>我们的建筑团队成员具有卓越的建筑技能和设计天分，我们会合理的为您量身设计和规划房屋布局和建材，以满足甚至超出您的期待。我们为您提供的设计方案中会包涵您与家人的生活方式、社区环境，以及最重要的财务预算。                        </p>
+                        <p id="english-about" class="on">We coordinate with our team of highly skilled and talented architects to design a home that will exceed your expectations. In your design consultation with us, we consider a number of factors, your family life style,neighbourhood,and of course,your budget. </p>
+                        <p id="chinese-about" class="off">我们的建筑团队成员具有卓越的建筑技能和设计天分，我们会合理的为您量身设计和规划房屋布局和建材，以满足甚至超出您的期待。我们为您提供的设计方案中会包涵您与家人的生活方式、社区环境，以及最重要的财务预算。                        </p>
                         </div>
                 </div>
             </section>
@@ -211,11 +222,11 @@
                     <img class="s-img-switch" src="./assets/images/image-08.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 3∶ Estimate  &  Contract</h3>
-                    <h3 class="cs-process__title">步骤3：预算合约</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 3∶ Estimate  &  Contract</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤3：预算合约</h3>
                     <div class="cs-process__content">
-                        <p>Once you are satisfied with the look and design of your new home, we will provide a detailed construction budget, tailoring the specifications to reflect the scope of your project. Your budget will be updated and reviewed through out the project and used as a controlled financial plan.</p>
-                        <p>若您对我们的设计方案感到100%满意，我们会提供一份工程预算案，其中包括建筑工程的细节描述。而在施工期间，我们还会时刻追踪款项的使用状况并及时向您更新，以便有效控制预算。                        </p>
+                        <p id="english-about" class="on">Once you are satisfied with the look and design of your new home, we will provide a detailed construction budget, tailoring the specifications to reflect the scope of your project. Your budget will be updated and reviewed through out the project and used as a controlled financial plan.</p>
+                        <p id="chinese-about" class="off">若您对我们的设计方案感到100%满意，我们会提供一份工程预算案，其中包括建筑工程的细节描述。而在施工期间，我们还会时刻追踪款项的使用状况并及时向您更新，以便有效控制预算。                        </p>
                         </div>
                 </div>
             </section>
@@ -225,11 +236,11 @@
                     <img class="s-img-switch" src="./assets/images/image-07.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 4: City Plan & Approval</h3>
-                    <h3 class="cs-process__title">步骤4：市政审批</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 4: City Plan & Approval</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤4：市政审批</h3>
                     <div class="cs-process__content">
-                        <p>With your design and budget in place, our team takes care of obtaining all of the necessary paper work to submit your plans to your local authority for planning approval.</p>
-                        <p>待您批准房屋设计与预算方案之后，我们会负责进行向市府申请房屋建筑许可证等工作。</p>
+                        <p id="english-about" class="on">With your design and budget in place, our team takes care of obtaining all of the necessary paper work to submit your plans to your local authority for planning approval.</p>
+                        <p id="chinese-about" class="off">待您批准房屋设计与预算方案之后，我们会负责进行向市府申请房屋建筑许可证等工作。</p>
                         </div>
                 </div>
             </section>
@@ -239,11 +250,11 @@
                     <img class="s-img-switch" src="./assets/images/image-06.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 5: Selections</h3>
-                    <h3 class="cs-process__title">步骤5：室内设计</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 5: Selections</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤5：室内设计</h3>
                     <div class="cs-process__content">
-                        <p>Now we turn our attention to the interior design of your new home. Our design team works closely with you, taking time to present and help you select all of the finishes for your new home. Working with our designers will also keep your project on a schedule, as we will ensure fixtures are ordered with your timeline in mind.</p>
-                        <p>我们的专业设计团队会就室内设计与您保持紧密沟通与合作，不仅有多种新房内部设计供您选择，协助您规划出最优的装潢方案，还会牢记建筑流程和时限，确保装潢硬件可以按时送达和安装。                        </p>
+                        <p id="english-about" class="on">Now we turn our attention to the interior design of your new home. Our design team works closely with you, taking time to present and help you select all of the finishes for your new home. Working with our designers will also keep your project on a schedule, as we will ensure fixtures are ordered with your timeline in mind.</p>
+                        <p id="chinese-about" class="off">我们的专业设计团队会就室内设计与您保持紧密沟通与合作，不仅有多种新房内部设计供您选择，协助您规划出最优的装潢方案，还会牢记建筑流程和时限，确保装潢硬件可以按时送达和安装。                        </p>
                         </div>
                 </div>
             </section>
@@ -253,11 +264,11 @@
                     <img class="s-img-switch" src="./assets/images/blog-09.jpg"  alt="img-work-process">
                 </div>
                 <div class="cs-process__info" style="text-align: left;">
-                    <h3 class="cs-process__title">Step 6: Building & Home Warranty</h3>
-                    <h3 class="cs-process__title">步骤6：房屋保险</h3>
+                    <h3 class="cs-process__title on" id="english-about">Step 6: Building & Home Warranty</h3>
+                    <h3 class="cs-process__title off" id="chinese-about">步骤6：房屋保险</h3>
                     <div class="cs-process__content">
-                        <p>Construction is often the most exciting aspect of home building. You will have direct access to us throughout the process and we will keep you up to date with our progress at each stage of the construction. All of our new homes come with a 2-5-10 Year Home Warranty Insurance under the Homeowner Protection Office.</p>
-                        <p>房屋开工后的建筑过程最令人激动，我们的工程团队将与您保持紧密联系，及时更新建筑进程。此外，我们公司对新屋建筑都会提供2-5-10年的房屋保险。                        </p>
+                        <p id="english-about" class="on">Construction is often the most exciting aspect of home building. You will have direct access to us throughout the process and we will keep you up to date with our progress at each stage of the construction. All of our new homes come with a 2-5-10 Year Home Warranty Insurance under the Homeowner Protection Office.</p>
+                        <p id="chinese-about" class="off">房屋开工后的建筑过程最令人激动，我们的工程团队将与您保持紧密联系，及时更新建筑进程。此外，我们公司对新屋建筑都会提供2-5-10年的房屋保险。                        </p>
                         </div>
                 </div>
             </section>
@@ -309,6 +320,7 @@
 <script src="./assets/js/wp-embed.min.js?ver=5.1.1"></script>
 <script src="./assets/js/js_composer_front.min.js?ver=5.5.5"></script>
 <script src="./assets/js/gm_addons_script.js?ver=5.1.1"></script>
+<script src="./assets/js/language-about.js"></script>
 
 
 </body>
