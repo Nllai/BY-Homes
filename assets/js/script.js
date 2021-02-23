@@ -1128,7 +1128,7 @@ $(window).on('resize', function (){
         // General
         direction: directionVar || 'horizontal',
         speed: speedVar,
-        loopedSlides: 6,
+        loopedSlides: 25,
         // Slides grid
         spaceBetween: spaceBetweenVar,
         slidesPerView: slidesPerViewVar || 1,
