@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/android-chrome-192x192-150x150.png?ver=3.01">
     <link rel="icon" href="./assets/images/favicon-32x32.png">
-    <title>BY Homes</title>
+    <title>Contact Us – BYHomes</title>
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif%3A400%7CUbuntu%3A300%7CNeuton%3A400%2C700%26subset%3Dlatin%2Clatin-ext&ver=1.1.2">
 
@@ -25,6 +25,7 @@
     <link rel="stylesheet" id="coca-core-css" href="./assets/css/style.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="coca-theme-css" href="./assets/css/style2.min.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css?ver=5.5.5" type="text/css" media="all">
+    <link rel="stylesheet" id="language-css" href="./assets/css/language.css" type="text/css" media="all">
 </head>
 
 <body class="home page-template-default page page-id-3946">
@@ -38,11 +39,11 @@
         <div class="cs-loader__bg">
             <div class="cs-loader__progress js-loader-progress">
                 <div class="cs-loader__logo cs-loader__logo--img cs-loader__logo--light js-loader-logo">
-                    BY Homes
+                    Coca
                 </div>
             </div>
             <div class="cs-loader__logo">
-                BY Homes
+                Coca
             </div>
         </div>
     </div>
@@ -53,9 +54,9 @@
     <div class="cs-top-header js-top-header">
         <div class="cs-top-header__content-wr">
             <ul class="cs-top-header__links">
+                <li class="cs-top-header__links-item"><a href="contact-me.html">FAQ</a></li>
                 <li class="cs-top-header__links-item"><a href="contact-us.html">CONTACT</a></li>
-                <li class="cs-top-header__links-item"><a href="contact-us.html">联系我们</a></li>
-                <li class="cs-top-header__links-item"><a href="tel:+778.990.9033">778.990.9033 </a></li>
+                <li class="cs-top-header__links-item"><a href="tel:+390245332287">+3902 45 33 22 87</a></li>
             </ul>
 
             <div class="cs-top-header__desc">
@@ -65,16 +66,15 @@
             </div>
         </div>
     </div>
-
     <header class="cs-header js-header  js-sticky-container cs-header--fixed">
         <div class="cs-header__wrapp js-header-height  js-sticky-header">
             <div class="cs-header__content-wr">
                 <div class="cs-logo cs-logo--header">
                     <a class="cs-logo__link" href="index.html">
-                        <img src="./assets/images/logo-black.png" srcset="./assets/images/logo-black.png 1x,./assets/images/logo-black@2x.png 2x" class="image_logo" alt="logo-b">
+                        <img src="./assets/images/logo-black.png" srcset="./assets/images/logo-black.png 1x,./assets/images/logo-black@2x.png 2x" class="image_logo" alt="logo-img">
                     </a>
                     <a class="cs-logo__link cs-logo__link--light" href="index.html">
-                        <img src="./assets/images/logo-white.png" srcset="./assets/images/logo-white.png 1x,./assets/images/logo-white@2x.png 2x" class="image_logo" alt="logo-w">
+                        <img src="./assets/images/logo-white.png" srcset="./assets/images/logo-white.png 1x,./assets/images/logo-white@2x.png 2x" class="image_logo" alt="logo-mg">
                     </a>
                 </div>
 
@@ -82,64 +82,44 @@
                     <div class="cs-header__inner">
                         <nav>
                             <ul class="main-menu">
-                                <li class="menu-item current-menu-ancestor"><a href="index.html">Home</a></li>
-                                <li class="menu-item"><a href="about.html">About</a></li>
-                                <li class="menu-item"><a href="projects.html">Projects</a>
-                                <li class="menu-item"><a href="project-concepts.html">Project Concepts</a></li>
-                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="menu-item current-menu-ancestor">
+                                    <a id="english-concepts" class="on" href="index.html">Home</a>
+                                    <a id="chinese-concepts" class="off" href="index.html">首页</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-concepts" class="on" href="about.html">About</a>
+                                    <a id="chinese-concepts" class="off" href="about.html">工作流程</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-concepts" class="on" href="projects.html">Projects</a>
+                                    <a id="chinese-concepts" class="off" href="projects.html">项目展示</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-concepts" class="on" href="project-concepts.html">Project Concepts</a>
+                                    <a id="chinese-concepts" class="off" href="project-concepts.html">项目概念</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-concepts" class="on" href="contact.html">Contact</a>
+                                    <a id="chinese-concepts" class="off" href="contact.html">联系我们</a>
+                                </li>
+                                <li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                                <li id="english-icon-concepts" class="menu-item on">
+                                    <a onclick="toggleLanguage()" href="#english-icon-concepts">
+                                        中文
+                                    </a>
+                                </li>
+                                <li id="chinese-icon-concepts" class="menu-item off">
+                                    <a onclick="toggleLanguage()" href="#chinese-icon-concepts">
+                                        EN
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
-                        <div class="cs-header__socials">
-                            <ul class="cs-socials cs-socials--nav-menu">
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-facebook"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-twitter"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-instagram"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-pinterest-p"  ></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
 
                 <div class="cs-header__nav-btn">
-
-                    <ul class="cs-socials cs-socials--menu">
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-facebook"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-twitter"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-instagram"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-pinterest-p"  ></i>
-                            </a>
-                        </li>
-                    </ul>
 
                     <!-- mobile icon -->
                     <div class="cs-nav-menu js-menu-block">
@@ -158,11 +138,7 @@
                 </div>
             </div>
         </div>
-    </header>
-
-    
-
-    <div class="cs-main-wrapp__inner">
+    </header>    <div class="cs-main-wrapp__inner">
         <div class="container padd-only-xs">
             <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="row row-fluid row-no-padding"><div class="column_container col-sm-12 "><div class="column-inner "><div>
                 <section class="container-fluid cs-banner no-padd  play  js-parallax-banner-parent">
@@ -174,86 +150,113 @@
 
                 <span class="cs-overlay"></span>
                 <div class="cs-banner__content js-banner-animation ">
-                    <h1 class="cs-banner__title"> CONTACT US  </h1>
-                    <h1 class="cs-banner__title"> 联系我们  </h1>
-                </div>
+                    <h1 id="english-concepts" class="on cs-banner__title"> CONTACT US  </h1>
+                    <h1 id="chinese-concepts" class="off cs-banner__title"> 联系我们  </h1>                </div>
 
             </section>
+            </div></div></div></div><div class="row-full-width clearfix"></div>
 
-            
-            <section class="cs-heading  cs-heading--left cs-heading--c-default cs-heading--modern">
-            <br><br>
-                <h3 class="cs-heading__title">Team Members</h3>
-            <br>
-            </section>
-            </div></div></div></div><div class="row row-fluid  padding-lg-105b padding-sm-70b"><div class="column_container col-sm-6 col-md-4 "><div class="column-inner "><div>
-            <div class="cs-address  cs-address--image">
-            <div class="cs-address__img">
-                <img src="./assets/images/image-09.jpg" alt="" class="s-img-switch">
-            </div>
-            <h6 class="cs-address__title">
-                ROCKY HE</h6>
-                <div class="cs-address__descr">
-                    <p>Director<br>
-                     +1 778.990.9033  <br>
-                     Boyounghomes@gmail.com  </p>
+            <div class="row row-fluid  padding-lg-105t padding-lg-55b padding-sm-70t padding-sm-40b">
+                <div class="column_container col-sm-12 ">
+                    <div class="column-inner ">
+                        <div>
+                            <section class="cs-heading  cs-heading--left cs-heading--c-default cs-heading--modern">
+
+                                <h3 class="cs-heading__title">
+                                    Team Members                    </h3>
+
+
+                            </section>
+                        </div>
                     </div>
-        
-        </div>
-        </div></div></div><div class="column_container col-sm-6 col-md-4  margin-xs-30t"><div class="column-inner "><div>            <div class="cs-address  cs-address--image">
-            <div class="cs-address__img">
-                <img src="./assets/images/image-04.jpg" alt="" class="s-img-switch">
-            </div>
-            <h6 class="cs-address__title">CHRIS QIN </h6>
-            <div class="cs-address__descr">
-                <p>General Manager<br>
-                 +1 778.991.7636  <br>
-                Chrisbyhomes@hotmail.com </p>
                 </div>
-
-        </div>
-        </div></div></div><div class="column_container col-sm-6 col-md-offset-0 col-md-4 col-sm-offset-3  margin-sm-30t"><div class="column-inner "><div>            <div class="cs-address  cs-address--image">
-            <div class="cs-address__img">
-                <img src="./assets/images/image-03.jpg" alt="" class="s-img-switch">
-            </div>
-            <h6 class="cs-address__title">ERIC WANG</h6>
-            <div class="cs-address__descr">
-                <p>Diligence Research Associate<br>
-                 +1 778.965.5678 <br>
-                Boyounghomes@gmail.com </p>
             </div>
 
-        </div>
-    
+            <div class="row row-fluid  padding-lg-105b padding-sm-70b">
+                <div class="column_container col-sm-6 col-md-4 ">
+                    <div class="column-inner ">
+                        <div>
+                            <div class="cs-address  cs-address--image">
+                                <div class="cs-address__img">
+                                    <img src="./assets/images/image-09.jpg" alt="" class="s-img-switch">
+                                </div>
+                                <h6 class="cs-address__title">
+                                    ROCKY HE</h6>
+                                    <div class="cs-address__descr">
+                                        <p>Director<br>
+                                         +1 778.990.9033  <br>
+                                         Boyounghomes@gmail.com  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_container col-sm-6 col-md-4  margin-xs-30t">
+                    <div class="column-inner ">
+                        <div>
+                            <div class="cs-address  cs-address--image">
+                                <div class="cs-address__img">
+                                    <img src="./assets/images/image-04.jpg" alt="" class="s-img-switch">
+                                </div>
+                                <h6 class="cs-address__title">CHRIS QIN </h6>
+                                <div class="cs-address__descr">
+                                    <p>General Manager<br>
+                                     +1 778.991.7636  <br>
+                                    Chrisbyhomes@hotmail.com </p>
+                                </div>
 
-    </div></div></div></div></div></div></div></div><div class="row-full-width clearfix"></div>
-    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="row row-fluid row-no-padding"><div class="column_container col-sm-12 "><div class="column-inner "><div>
-        <div class="ugm-map-wrapper ">
-            <div style="height: 200px" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.260523496806!2d-123.08236142492423!3d49.184018891208524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486750adb955555%3A0x77680bb1476d9f0b!2s13091%20Vanier%20Pl%20%23311%2C%20Richmond%2C%20BC%20V6V%202J1%2C%20Canada!5e0!3m2!1sen!2snz!4v1614580610800!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-            
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_container col-sm-6 col-md-offset-0 col-md-4 col-sm-offset-3  margin-sm-30t">
+                    <div class="column-inner ">
+                        <div>
+                            <div class="cs-address  cs-address--image">
+                                <div class="cs-address__img">
+                                    <img src="./assets/images/image-03.jpg" alt="" class="s-img-switch">
+                                </div>
+                                <h6 class="cs-address__title">ERIC WANG</h6>
+                                <div class="cs-address__descr">
+                                    <p>Diligence Research Associate<br>
+                                     +1 778.965.5678 <br>
+                                    Boyounghomes@gmail.com </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div></div></div></div></div>
-    <div class="row-full-width clearfix"></div>
-</div></div></div></div>
-</div>
-</div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="row row-fluid row-no-padding">
+                <div class="column_container col-sm-12 ">
+                    <div class="column-inner ">
+                        <div>
+                            <div class="ugm-map-wrapper ">
+                                <div style="height: 600px">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.260523496806!2d-123.08236142492423!3d49.184018891208524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486750adb955555%3A0x77680bb1476d9f0b!2s13091%20Vanier%20Pl%20%23311%2C%20Richmond%2C%20BC%20V6V%202J1%2C%20Canada!5e0!3m2!1sen!2snz!4v1614580610800!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-full-width clearfix"></div>
 
 
-    </div></div></div></div><div class="row-full-width clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="row row-fluid cs-half-bg  padding-lg-105t padding-lg-75b padding-sm-70t padding-sm-50b"><div class="wpb_column column_container col-sm-8 col-md-offset-0 col-md-6 col-sm-offset-2 "><div class="column-inner "><div><div class="row inner row-fluid "><div class="wpb_column column_container col-sm-12 col-md-11"><div class="column-inner"><div>
-           
-                <section class="cs-heading  cs-heading--left cs-heading--c-default cs-heading--modern">
+            <div data-vc-full-width="true" data-vc-full-width-init="false" class="row row-fluid cs-half-bg  padding-lg-105t padding-lg-75b padding-sm-70t padding-sm-50b"><div class="wpb_column column_container col-sm-8 col-md-offset-0 col-md-6 col-sm-offset-2 "><div class="column-inner "><div><div class="row inner row-fluid "><div class="wpb_column column_container col-sm-12 col-md-11"><div class="column-inner"><div>
+            <section class="cs-heading  cs-heading--left cs-heading--c-default cs-heading--modern">
 
-                <h3 class="cs-heading__title"> Let’s start new project.</h3>
+                <h3 class="cs-heading__title">                    Let’s start new project.                    </h3>
 
                 <div class="cs-heading__content">
-                    <p>Please send message to us and we will return to you as soon as possible.
-
-                    </div>
+                    <p>Please send us a message and we will get back to you as soon as we can.</p>
+                </div>
 
             </section>
         </div></div></div></div><div class="row inner row-fluid  margin-lg-25t"><div class="column_container col-sm-12"><div class="column-inner"><div>
-            
+            <div class="cs-address  cs-address--simple">
+
+        </div>
         </div></div></div></div></div></div></div><div class="wpb_column column_container col-sm-8 col-md-offset-0 col-md-6 col-sm-offset-2  margin-sm-30t"><div class="column-inner "><div><div class="row inner row-fluid "><div class="column_container col-sm-12 col-md-offset-1 col-md-11"><div class="column-inner"><div>
             <div class="wpb_text_column wpb_content_element " >
                 <div>
@@ -290,9 +293,10 @@
                 </div>
             </div>
         </div></div></div></div></div></div></div></div><div class="row-full-width clearfix"></div>
-           
-        </div></div></div></div>
-        </div>
+
+
+
+    </div>
     </div>
 
 
@@ -339,6 +343,7 @@
 <script src="./assets/js/before-after.min.js?ver=1.1.2"></script>
 <script src="./assets/js/comment-reply.min.js?ver=5.1.1"></script>
 <script src="./assets/js/js_composer_front.min.js?ver=5.5.5"></script>
+<script src="./assets/js/language-concepts.js"></script>
 
 
 </body>
