@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/android-chrome-192x192-150x150.png?ver=3.01">
     <link rel="icon" href="./assets/images/favicon-32x32.png">
-    <title>Slider – Coca</title>
+    <title>South Langley</title>
     <link type="text/css" rel="stylesheet" href="http:/fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link type="text/css" rel="stylesheet" href="https:/fonts.googleapis.com/css?family=PT+Serif%3A400%7CUbuntu%3A300%7CNeuton%3A400%2C700%26subset%3Dlatin%2Clatin-ext&ver=1.1.2">
 
@@ -26,6 +26,7 @@
     <link rel="stylesheet" id="coca-core-css" href="./assets/css/style.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="coca-theme-css" href="./assets/css/style2.min.css?ver=1.1.2" type="text/css" media="all">
     <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css?ver=5.5.5" type="text/css" media="all">
+    <link rel="stylesheet" id="language-css" href="./assets/css/language.css" type="text/css" media="all">
 </head>
 
 <body class="home page-template-default page page-id-3946">
@@ -52,7 +53,8 @@
     <div class="cs-top-header js-top-header">
         <div class="cs-top-header__content-wr">
             <ul class="cs-top-header__links">
-                <li class="cs-top-header__links-item"><a href="contact-us.html">CONTACT</a></li>
+                <li class="cs-top-header__links-item"><a id="english-index" class="on" href="contact-us.html">CONTACT</a></li>
+                <li class="cs-top-header__links-item"><a id="chinese-index" class="off" href="contact-us.html">联系我们</a></li>
                 <li class="cs-top-header__links-item"><a href="tel:+7789909033">778.990.9033</a></li>
             </ul>
 
@@ -80,65 +82,43 @@
                     <div class="cs-header__inner">
                         <nav>
                             <ul class="main-menu">
-                                <li class="menu-item current-menu-ancestor"><a href="index.html">Home</a></li>
-                                <li class="menu-item"><a href="about.html">About</a></li>
-                                <li class="menu-item"><a href="projects.html">Projects</a>
-                                <li class="menu-item"><a href="project-concepts.html">Project Concepts</a></li>
-                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="menu-item current-menu-ancestor">
+                                    <a id="english-index" class="on" href="index.html">Home</a>
+                                    <a id="chinese-index" class="off" href="index.html">首页</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-index" class="on" href="about.html">About</a>
+                                    <a id="chinese-index" class="off" href="about.html">工作流程</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-index" class="on" href="projects.html">Projects</a>
+                                    <a id="chinese-index" class="off" href="projects.html">项目展示</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-index" class="on" href="project-contact.html">Project contact</a>
+                                    <a id="chinese-index" class="off" href="project-contact.html">项目概念</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a id="english-index" class="on" href="contact.html">Contact</a>
+                                    <a id="chinese-index" class="off" href="contact.html">联系我们</a>
+                                </li>
+                                <li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                                <li id="english-icon-index" class="menu-item on">
+                                    <a onclick="toggleLanguage()" href="#english-icon-index">
+                                        中文
+                                    </a>
+                                </li>
+                                <li id="chinese-icon-index" class="menu-item off">
+                                    <a onclick="toggleLanguage()" href="#chinese-icon-index">
+                                        EN
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
-
-                        <div class="cs-header__socials">
-                            <ul class="cs-socials cs-socials--nav-menu">
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-facebook"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-twitter"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-instagram"  ></i>
-                                    </a>
-                                </li>
-                                <li class="cs-socials__item">
-                                    <a target="_blank" href="#">
-                                        <i aria-hidden="true" class="fa fa-pinterest-p"  ></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
 
                 <div class="cs-header__nav-btn">
-
-                    <ul class="cs-socials cs-socials--menu">
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-facebook"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-twitter"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-instagram"  ></i>
-                            </a>
-                        </li>
-                        <li class="cs-socials__item">
-                            <a target="_blank" href="#">
-                                <i aria-hidden="true" class="fa fa-pinterest-p"  ></i>
-                            </a>
-                        </li>
-                    </ul>
 
                     <!-- mobile icon -->
                     <div class="cs-nav-menu js-menu-block">
@@ -321,6 +301,7 @@
 <script src="./assets/js/wp-embed.min.js?ver=5.1.1"></script>
 <script src="./assets/js/js_composer_front.min.js?ver=5.5.5"></script>
 <script src="./assets/js/gm_addons_script.js?ver=5.1.1"></script>
+<script src="./assets/js/language.js"></script>
 
 
 </body>
