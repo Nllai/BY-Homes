@@ -13,6 +13,6 @@ function toggleLanguage() {
     document.querySelectorAll('[id^="chinese-contact"]').forEach(
         node => node.classList.toggle('off'))
 
-
+    return false;
 
 }

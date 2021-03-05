@@ -396,7 +396,7 @@
       $('.js-filter-menu').removeAttr('style');
     }
   }
-  
+
 
   $(window).resize(function () {
     if($(window).width() > 1024){
@@ -1435,12 +1435,16 @@ $(window).on('resize', function (){
   function linkIgnore(link) {
     var ignored = ['.pdf', '.doc', '.eps', '.png', '.jpg', '.jpeg', '.zip', 'admin', 'wp-', 'wp-admin', 'feed', '#', '&add-to-cart=', '?add-to-cart=', '?remove_item', 'tel:', 'mailto:'];
     var ignoring = false;
-    for (var i = ignored.length - 1; i >= 0; i--) {
-      if (link.attr('href').indexOf(ignored[i]) > -1) {
-        ignoring = true;
+    if (link.attr('href')) {
+      for (var i = ignored.length - 1; i >= 0; i--) {
+        if (link.attr('href').indexOf(ignored[i]) > -1) {
+          ignoring = true;
+        }
       }
     }
-
+    else {
+      ignoring = true
+    }
     return ignoring || ( link.attr('target') == '_blank' ) || ( link.attr('target') == ' _blank' );
   }
 
@@ -1524,10 +1528,10 @@ $(window).on('resize', function (){
         }
     }
     oldString = oldString.slice(0, -numberLength);
- 
+
     return oldString;
  }
- 
+
   /* ------------------------------------------- */
   /* WINDOW LOAD */
   /* ------------------------------------------- */
